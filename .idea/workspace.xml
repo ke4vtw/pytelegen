@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51011e7a-c7f2-4c7a-ac6d-711934eb475c" name="Default Changelist" comment="Framework in place">
-      <change beforePath="$PROJECT_DIR$/agents.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testscript.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scriptEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/scriptEngine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,27 +23,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="20" />
+          <entry key="json" value="1" />
+          <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
-          <entry key="Scratch" value="3" />
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="18" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="19" />
           <entry key="dummy" value="35" />
-          <entry key="py" value="5751" />
+          <entry key="json" value="29" />
+          <entry key="py" value="5947" />
           <entry key="txt" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JSON" value="29" />
           <entry key="PLAIN_TEXT" value="83" />
-          <entry key="Python" value="4087" />
+          <entry key="Python" value="4283" />
           <entry key="Scratch" value="1683" />
         </counts>
       </usages-collector>
@@ -54,28 +61,38 @@
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/tests.py">
+            <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+                <state relative-caret-position="180">
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
                   <folding>
-                    <element signature="e#0#23#0" expanded="true" />
-                    <marker date="1537892876000" expanded="true" signature="105:110" ph="..." />
-                    <marker date="1537892876000" expanded="true" signature="460:1761" ph="..." />
+                    <element signature="e#0#16#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testscript.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/agents.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="539">
-                  <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+                <state relative-caret-position="375">
+                  <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                     <element signature="e#50#1245#0" />
                     <element signature="e#953#1106#0" />
+                    <element signature="e#1026#1031#0" />
+                    <element signature="e#2625#2902#0" />
+                    <element signature="e#2958#4311#0" />
                     <marker date="1537898231000" expanded="true" signature="519:584" ph="..." />
                     <marker date="1537898231000" expanded="true" signature="1550:1806" ph="..." />
                     <marker date="1537898231000" expanded="true" signature="1920:4399" ph="..." />
@@ -90,8 +107,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="29" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -122,6 +139,20 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/tests.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="36" column="8" selection-start-line="34" selection-end-line="40" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                    <marker date="1537892876000" expanded="true" signature="105:110" ph="..." />
+                    <marker date="1537892876000" expanded="true" signature="460:1761" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -129,12 +160,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scriptEngine.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+                <state>
+                  <caret column="17" selection-start-column="17" selection-end-column="17" />
                   <folding>
-                    <element signature="e#0#17#0" expanded="true" />
-                    <marker date="1537820666000" expanded="true" signature="54:55" ph="..." />
-                    <marker date="1537820666000" expanded="true" signature="54:60" ph="..." />
+                    <marker date="1537899343000" expanded="true" signature="53:54" ph="..." />
+                    <marker date="1537899343000" expanded="true" signature="53:59" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -172,12 +202,14 @@
         <option value="$PROJECT_DIR$/messages/message.py" />
         <option value="$PROJECT_DIR$/FileAgent.py" />
         <option value="$PROJECT_DIR$/Agent.py" />
-        <option value="$PROJECT_DIR$/scriptEngine.py" />
         <option value="$PROJECT_DIR$/procInfo.py" />
         <option value="$PROJECT_DIR$/messages.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/tests.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/agents.py" />
+        <option value="$PROJECT_DIR$/scriptEngine.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/testscript.json" />
       </list>
     </option>
   </component>
@@ -315,10 +347,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" sideWeight="0.50037736" side_tool="true" weight="0.13548641" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49962264" visible="true" weight="0.13548641" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49962264" visible="true" weight="0.13548641" />
       <window_info id="Structure" order="1" sideWeight="0.50037736" side_tool="true" weight="0.13548641" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" x="5120" y="496" width="1440" height="877" id="Python Console" type="FLOATING" visible="true" weight="0.6837736" />
+      <window_info anchor="bottom" x="5120" y="496" width="1440" height="877" id="Python Console" type="FLOATING" visible="true" weight="0.6837736" />
       <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32981133" />
@@ -410,25 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1537892876000" expanded="true" signature="105:110" ph="..." />
-            <marker date="1537892876000" expanded="true" signature="460:1761" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -438,24 +451,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scriptEngine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <marker date="1537820666000" expanded="true" signature="54:55" ph="..." />
-            <marker date="1537820666000" expanded="true" signature="54:60" ph="..." />
+            <marker date="1537899343000" expanded="true" signature="53:54" ph="..." />
+            <marker date="1537899343000" expanded="true" signature="53:59" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        <state relative-caret-position="375">
+          <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#50#1245#0" />
             <element signature="e#953#1106#0" />
+            <element signature="e#1026#1031#0" />
+            <element signature="e#2625#2902#0" />
+            <element signature="e#2958#4311#0" />
             <marker date="1537898231000" expanded="true" signature="519:584" ph="..." />
             <marker date="1537898231000" expanded="true" signature="1550:1806" ph="..." />
             <marker date="1537898231000" expanded="true" signature="1920:4399" ph="..." />
@@ -463,6 +478,42 @@
             <marker date="1537898231000" expanded="true" signature="4520:4570" ph="..." />
             <marker date="1537898231000" expanded="true" signature="4713:4714" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="8" selection-start-line="34" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1537892876000" expanded="true" signature="105:110" ph="..." />
+            <marker date="1537892876000" expanded="true" signature="460:1761" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testscript.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>

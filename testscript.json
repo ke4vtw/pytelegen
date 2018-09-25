@@ -1,0 +1,36 @@
+[
+  {
+    "py/object": "messages.Message",
+    "domain": "File",
+    "action": "Create",
+    "fileName": "~/tempfile.txt"
+  },
+  {
+    "py/object": "messages.Message",
+    "domain": "File",
+    "action": "Update",
+    "fileName": "~/tempfile.txt",
+    "append": "Test> "
+  },
+  {
+    "py/object": "messages.Message",
+    "domain": "Process",
+    "action": "Spawn",
+    "command": [
+      "atom",
+      "~/tempfile.txt"
+    ]
+  },
+  {
+    "py/object": "messages.Message",
+    "domain": "Network",
+    "action": "Get",
+    "url": "http://www.google.com"
+  },
+  {
+    "py/object": "messages.Message",
+    "domain": "File",
+    "action": "Delete",
+    "fileName": "~/tempfile.txt"
+  }
+]
