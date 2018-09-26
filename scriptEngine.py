@@ -5,9 +5,6 @@ import agents
 
 class ScriptEngine:
 
-    def __init__(self):
-        pass
-
     def execute(self, script):
         ops = jsonpickle.decode(script)
         agent = agents.Agent()

@@ -1,6 +1,6 @@
-# Message Base Class
-import jsonpickle
 import datetime
+
+import jsonpickle
 
 
 class Message:
