@@ -17,7 +17,6 @@ class Message:
     pInfo.processCmdLine = p.cmdline()
     pInfo.username = p.username()
     pInfo.machine = platform.uname()[1]
-    pInfo.currentFolder = p.cwd()
 
 def get_response(msg):
     resp = jsonpickle.decode(jsonpickle.encode(msg)) # Messages should always be readonly, so clone the object. Avoid importing copy library.
@@ -27,14 +26,14 @@ def get_response(msg):
 
 def network_get(msg):
     url = urlparse(msg.url)
+    http = 'GET {0} HTTP/{1} {2}'.format(url.path or '/', 1.0, "\r\n\r\n")
+    resp = get_response(msg)
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(5)
     sock.connect((url.netloc, url.port or 80))
-    http = 'GET {0} HTTP/{1} {2}'.format(url.path or '/', 1.0, "\r\n\r\n")
-    resp = get_response(msg)
     sock.sendall(http)
-    resp.bytesSent = len(http)
     sock.close()
+    resp.bytesSent = len(http)
     resp.protocol = url.scheme
     if hasattr(url, "port"):
         resp.baseurl = url.netloc.split(':')[0]
